@@ -1,7 +1,6 @@
 Granularity|Feature|Definition (The comment used does not contain the issue reporter's comment, except ld_ Influence)
 ------------ | ------------- | ------------
 Issue|ID|identifier
-
 	|NumPosts|the total number of posts under the same ID before closed
 	|StartTime|Issue created time
 	|EndTime|Issue closed time
@@ -12,7 +11,6 @@ Issue|ID|identifier
 	|SetLdPractices|the set of leadership practices on the issue
 	||
 Comment|IssueID|the issue ID which the comment is associated with
-
 	|Commenter|the author of the comment
 	|TimeStamp|the date/time the comment was made
 	|LdLabel|the label of the leadership practice
