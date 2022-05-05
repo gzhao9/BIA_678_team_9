@@ -1,13 +1,22 @@
 Granularity	Feature	Definition (The comment used does not contain the issue reporter's comment, except ld_ Influence)
+
 Issue	ID	identifier
+
 	NumPosts	the total number of posts under the same ID before closed
+	
 	StartTime	Issue created time
 	EndTime	Issue closed time
+	
 	Duration	the days between endTime and startTime
+	
 	NumCommenters	the total number of people commented on the issue before closed
+	
 	NumLdPractices	the total number of leadership practices on the issue before closed
+	
     NumNonLd    the number of comments are not leadership
+    
 	SetLdPractices	the set of leadership practices on the issue
+	
 		
 Comment	IssueID	the issue ID which the comment is associated with
 	Commenter	the author of the comment
