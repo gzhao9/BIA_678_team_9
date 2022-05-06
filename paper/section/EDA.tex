@@ -1,8 +1,14 @@
 \section{EDA}
-
-
+We got the 20,122 comments data from Bitcoin community from GitHub. After getting this data, we used the package to get the leadership corresponding to each comment, which corresponds to LD1-LD6 respectively.\citeyear{huang2022identifying} If there is no leadership corresponding to this comment, it will be marked as N. In this project, we consider problems from two perspectives, one is all issues. The other is all the developers.\cite{bass1996multifactor}
 \subsection{What is the data}
-
+As the measurements of the contribution of the community, leadership status is not necessarily As the measurements of the contribution of the community, leadership status is not necessarily based on an OSS community position or designated authority. we adopt the Yukl's definition of leadership\cite{yukl1992theory} as “influence exerted over other people to guide, structure, and facilitate relationships in a group. Utilize the NLP algorithm and packed into iLead, labeled 7 categories of the leadership (LD1/LD2…LD6/N)\cite{zhu2012effectiveness,huang2022identifying} behaviors based on these existing leadership studies, we develop an automatic algorithm to merge and consolidate different pattern sets extracted from multiple projects into a final pattern ranking list. When applying iLead for leadership identification, the final pattern ranking list can be used to automatically match new issue comments and identify corresponding leadership behaviors. The evaluation is conducted on 5 OSS project in GitHub topic that varies from atom/bitcoin/brew/ember/sklearn, and more than 100000 issue comments. Results show that iLead can achieve a median precision of 0.82 and recall of 0.78,outperforming ten machine/deep learning baselines.\cite{pustejovsky2012natural}
+\begin{itemize}
+\item LD1 (Proposal). This category refers to the idea proposal type of leadership behaviors in issue discussion, which maps to the intellectual stimulation/inspiration category in existing leadership studies
+\item LD2 (Redirection). This category refers to issue comments redirecting attentions to a new topic (e.g., concepts, processes, or resources) or to a more relevant information sources, either internal (e.g., a related issue within the OSS project) or external (a site outside the OSS project)
+\item LD3 (Confirmation). This category refers to the leadership function in supporting and coordinating an issue or opinion expression based on voting or shared perception among developers.
+\item LD4 (Inquiry). This category refers to cases where developers ask for more clarification question about the issue being reported/discussed, e.g., the project version and reproduce steps, or provide confirmation to former opinions, to facilitate the issue moving forward.
+\item LD5 (Operation) and LD6 (Volunteer) represent two distinct types of administrative functions during issue life cycle. LD5 refers to comments related to either closing or reopening an issue, and LD6 relates to volunteering in undertaking some wrap-up bug fixing actions, respectively.
+\end{itemize}
 
 \subsection{Cleaning}
 
